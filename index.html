@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>forms</title>
+</head>
+<body>
+    <h1 class="visually-hidden">some text from SEO</h1>
+    <main class="main">
+        <div class="container">
+            <!--             first form               -->
+            <form class="account" action="#" method="post" name="create-account">
+                <h2 class="title">Create an Account</h2>
+                <div class="user-name">
+                    <label class="label">First Name
+                        <input type="text" required name="user-fname" id="user-fname">
+                    </label>
+                    <label class="label">Last Name
+                        <input type="text" required name="user-lname">
+                    </label>
+                </div>
+                <div class="user-email">
+                    <label class="label">E-mail
+                        <input type="email" required name="user-email">
+                    </label>
+                    <p>We'll never share your email with anyone else.</p>
+                </div>
+                <div class="user-sex">
+                    <label class="label">
+                        <input type="radio" name="user-sex">
+                        Male
+                    </label>
+                    <label class="label">
+                        <input type="radio" name="user-sex">
+                        Female
+                    </label>
+                </div>
+                <div class="user-location">
+                    <label class="label">
+                        Country
+                        <select name="user-country">
+                            <option disabled selected>Select</option>
+                            <option value="ukraine">Ukraine</option>
+                            <option value="netherlands">Netherlands</option>
+                            <option value="france">France</option>
+                            <option value="italy">Italy</option>
+                            <option value="spain">Spain</option>
+                            <option value="germany">Germany</option>
+                            <option value="switzerland">Switzerland</option>
+                        </select>
+                    </label>
+                    <label class="label">
+                        City
+                        <input type="text" name="user-city">
+                    </label>
+                </div>
+                <div class="account-submit">
+                    <button type="submit">Sing Up</button>
+                    <p>By clicking the 'Sign Up' button, you confirm that you accept our 
+                        <a href="#">Terms of Use</a> and 
+                        <a href="#">Privacy Policy</a>.
+                    </p>
+                </div>
+                <hr>
+                <p class="account-exist">Have an account? 
+                    <a href="#">Log In</a>
+                </p>
+            </form>
+            <!--                second form              -->  
+            <form class="profile" action="#" method="post" enctype="multipart/form-data" name="update-profile">
+                <h2 class="title">Profile</h2>
+                <div class="user-avatar">
+                    <img class="user-avatar-standart" src="./img/icon-avatar.png" alt="user avatar">
+                    <input type="file" name="user-avatar">
+                    <button type="reset">
+                        <img src="./img/trash.svg" alt="Reset">
+                    </button>
+                    <p>Up to 1 MB (300x300 px)</p>
+                </div>
+                <div class="user-info">
+                    <label class="label">Name 
+                        <input type="text" required name="user-name">
+                    </label>
+                    <label class="label">E-mail
+                        <input type="email" required name="user-email">
+                    </label>
+                </div>
+                <div class="user-location">
+                    <label class="label">
+                        Country
+                        <select name="user-country">
+                            <option disabled selected>Select</option>
+                            <option value="ukraine">Ukraine</option>
+                            <option value="netherlands">Netherlands</option>
+                            <option value="france">France</option>
+                            <option value="italy">Italy</option>
+                            <option value="spain">Spain</option>
+                            <option value="germany">Germany</option>
+                            <option value="switzerland">Switzerland</option>
+                        </select>
+                    </label>
+                    <label class="label">
+                        City
+                        <input type="text" name="user-city">
+                    </label>
+                </div>
+                <div class="user-numbers">
+                    <label class="label">
+                        Zip Code
+                        <input type="text" name="user-zip-cod" required >
+                    </label>
+                    <label class="label">
+                        Phone Number
+                        <input type="tel" name="user-phon" required>
+                    </label>
+                </div>
+                <button class="user-update" type="submit">Update</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
